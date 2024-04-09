@@ -1,0 +1,432 @@
+
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+
+/* Body and text color */
+body {
+    color: black; /* White text color */
+    background: #000000 !important; /* Background color with !important */
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* White text color for headings */
+    font-family:'Fira Sans', sans-serif;
+}
+
+/* Links */
+a {
+    font-family:'Fira Sans', sans-serif;
+    font-weight: 600; /* Bold font weight */
+    color: white; /* Light gray color */
+    transition: .3s; /* Smooth transition */
+}
+
+
+a:hover,
+a:active,
+a:focus {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.custom-btn {
+    padding: 12px 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #b8860b;
+    border: 2px solid #b8860b;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn.custom-btn:hover {
+    color: #b8860b;
+    background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #b8860b;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #719a0a;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: url(../img/page-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background:  #0a0808d4;
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #FFFFFF; /* White text color */
+    text-align: left;
+}
+
+/* .footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF; /* White text color */
+/* } */ */
+
+.footer .footer-contact h2::after,
+.footer .footer-link h2::after,
+.footer .footer-newsletter h2::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF; /* White text color */
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* White text color */
+    transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    margin-right: 10px;
+    color: #FFFFFF; /* White text color */
+}
+
+.footer .footer-link a:hover {
+    color: #FFFFFF; /* White text color */
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+    color: #b8860b; /* White text color */
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b8860b; /* Background color for icons */
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff !important; /* White color for icons */
+}
+
+.footer .footer-social a.fab {
+    color: #ffffff !important; /* White color for icons */
+}
+
+
+.footer .footer-social a:hover {
+    background: #d5c062 !important; /* White text color */
+}
+
+.footer .footer-social a:last-child {
+    margin: 0;
+}
+
+.footer .footer-newsletter .form {
+    position: relative;
+    width: 100%;
+}
+
+.footer .footer-newsletter input {
+    height: 60px;
+    background: transparent;
+    border: 1px solid #FFFFFF; /* White text color */
+    border-radius: 5px;
+}
+
+.footer .footer-newsletter .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 44px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer .copyright {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background:#333333;
+}
+
+.footer .copyright p {
+    margin: 0;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.footer .copyright p a {
+    color: #b8860b;
+}
+
+.footer .copyright p a:hover {
+    color: #719a0a;
+}
+
+
+/* Header properties */
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Company logo */
+.company-logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 30px; /* Adjust top position */
+    left: 10%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Move the logo left by half of its width */
+    z-index: 9999; /* Ensure logo is above other content */
+    
+}
+
+
+
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Set max width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    background-color: black; /* Set background color for the container */
+    border-radius: 15px; /* Round corners for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    color: #333333; 
+}
+
+
+/* Image styles */
+.image {
+    width: 90%; /* Ensure image fills the container */
+    display: block; /* Make the image a block element */
+    border-radius: 15px; /* Round corners for image */
+    margin: 0 auto 20px; /* Center the image horizontally and add margin at the bottom */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    margin-top: 8%;
+}
+
+/* Content styles */
+.content {
+    padding: 20px; /* Add padding to content */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 28px; /* Set font size for h1 */
+    font-weight: bold; /* Set font weight for h1 */
+    margin-bottom: 20px; /* Add margin bottom */
+    margin-left: 50px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 14px; /* Set font size for paragraphs */
+    line-height: 1.6; /* Set line height for paragraphs */
+    margin-bottom: 20px; /* Add margin bottom */
+    color:white;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add margin bottom */
+    color:white;
+    font-weight: normal;
+    text-align: left;
+}
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list-style-type */
+    padding: 0; /* Remove default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add margin bottom */
+    font-size: 14px;
+}
+
+.content ul li strong {
+    color: #b8860b; /* Change to your desired font color */
+}
+
+ul li::before {
+    content: "•"; /* Use any bullet point character you prefer */
+    color: #b8860b; /* Set the color of the bullet point */
+    display: inline-block; /* Ensure the bullet point is displayed inline with the text */
+    width: 1em; /* Adjust as needed */
+    margin-right: - 0.5em; /* Adjust as needed */
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333; /* Background color for footer */
+    color: #fff; /* Text color for footer */
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+    text-align: center; /* Center align text */
+}
+
+.footer a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Copyright section */
+.copyright {
+    background-color: #222; /* Background color */
+    color: #ccc; /* Text color */
+    padding: 15px 0; /* Add padding */
+    text-align: center; /* Center align text */
+}
+
+/* Links */
+a {
+    font-family:'Fira Sans', sans-serif;
+    font-weight: 600; /* Bold font weight */
+    color: #cbc9c4; /* Light gray color */
+    transition: .3s; /* Smooth transition */
+}
+
+
+a:hover,
+a:active,
+a:focus {
+    color: #b9b9b9;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.custom-btn {
+    padding: 12px 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background:#b8860b;
+    border: 2px solid #b8860b;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn.custom-btn:hover {
+    color: #b8860b;
+    background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
